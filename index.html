@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Buttons</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            gap: 20px;
+        }
+
+        .neon-btn {
+            font-size: 1.5rem;
+            padding: 15px 30px;
+            color: white;
+            background: transparent;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: 0.5s;
+            border: 2px solid;
+        }
+
+        .neon-green {
+            border-color: #0f0;
+        }
+
+        .neon-green:hover {
+            color: black;
+            background: #0f0;
+            box-shadow: 0 0 15px #0f0, 0 0 30px #0f0, 0 0 45px #0f0;
+        }
+
+        .neon-red {
+            border-color: #f00;
+        }
+
+        .neon-red:hover {
+            color: black;
+            background: #f00;
+            box-shadow: 0 0 15px #f00, 0 0 30px #f00, 0 0 45px #f00;
+        }
+    </style>
+</head>
+<body>
+    <button class="neon-btn neon-green">Hover Me</button>
+    <button class="neon-btn neon-red">Hover Me</button>
+</body>
+</html>
